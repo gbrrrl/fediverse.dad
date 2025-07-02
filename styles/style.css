@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	background-image: url('');
+	font-family: Inconsolata, Courier, monospace;
+	margin: 0;
+}
+
+h2, a {
+	color: #fff;
+	font-family: Inconsolata, Courier, monospace;
+	text-decoration: none;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #fff;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #000;
+	text-align: center;
+	padding: 8px 12px;
+	text-decoration: none;
+}
+
+.navbar a.right {
+	float: right;
+}
+
+.navbar a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.navbar a.active {
+	background-color: #000;
+	color: #fff;
+}
+
+.row {  
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.aardwolf, .akkoma, .bandwagon, .bonfire, .bookwyrm, .castopod, .diaspora, .firefish, .friendica, .funkwhale, .gotosocial, .gnusocial, .hubzilla, .ibiswiki, .iceshrimp, .kbin, .lemmy, .lobsters, .loops, .mastodon, .misskey, .mitra, .mobilizon, .movim, .neodb, .owncast, .peertube, .piefed, .pinetta, .pixelfed, .pleroma, .plume, .sharkey, .socialhome, .smithereen, .vidzy, .vernissage, .wafrn, .writefreely, .bsky, .microblog, .codeberg {
+	-ms-flex: 10%;
+	flex: 10%;
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	margin: auto;
+	padding: 40px;
+}
+
+.aardwolf, .akkoma, .bandwagon, .bonfire, .bookwyrm, .castopod, .diaspora, .firefish, .friendica, .funkwhale, .gotosocial, .gnusocial, .hubzilla, .ibiswiki, .iceshrimp, .kbin, .lemmy, .lobsters, .loops, .mastodon, .misskey, .mitra, .mobilizon, .movim, .neodb, .owncast, .peertube, .piefed, .pinetta, .pixelfed, .pleroma, .plume, .sharkey, .socialhome, .smithereen, .vidzy, .vernissage, .wafrn, .writefreely, .bsky, .microblog, .codeberg a {
+	font-family: Inconsolata, Courier, monospace;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+	.row {   
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+}
